@@ -1,0 +1,41 @@
+name: hogwarts_compendium
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0' # Specifies the Dart SDK version range.
+
+dependencies:
+  flutter:
+    sdk: flutter # The Flutter SDK.
+  http: ^1.2.1 # Package for making HTTP requests.
+  flutter_bloc: ^8.1.5 # State management library.
+  equatable: ^2.0.5 # Helps to compare objects.
+  get_it: ^7.7.0 # Dependency injection library.
+  rive: ^0.13.5 # Package for using Rive animations.
+  flutter_svg: ^2.0.10+1 # Package to render SVG images.
+  cupertino_icons: ^1.0.6 # Package for iOS style icons.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter # Package for testing Flutter apps.
+  flutter_lints: ^4.0.0 # Lints for Flutter apps to encourage good coding practices.
+  mockito: ^5.4.4 # Package for mocking classes.
+  bloc_test: ^9.1.7 # Package for testing BLoC classes.
+  build_runner: ^2.4.10 # Package for generating code.
+
+flutter:
+  uses-material-design: true # Enables the use of Material Design icons.
+
+  assets:
+    - assets/loaders/ # Directory for loader animations.
+    - assets/logos/ # Directory for logo images.
+    - assets/icons/ # Directory for icon images.
+
+  fonts:
+    - family: Potter
+      fonts:
+        - asset: assets/fonts/potter.ttf # Custom font asset.
